@@ -1,0 +1,35 @@
+.slideshow {
+  height: 150px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+
+.slideshow:hover .slideshowImages {
+  animation-play-state: paused;
+}
+
+.slideshowImages {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    animation: moveSlideshow 30s linear infinite;
+}
+
+.slideshowImages img {
+  display:inline-block;
+  vertical-align:middle;
+  width:auto;
+  margin: 0 15px;
+}
+
+@keyframes moveSlideshow {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
