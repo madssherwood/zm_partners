@@ -23,7 +23,12 @@
   vertical-align:middle;
   max-height: 100px;
   width:auto;
-  margin: 0 15px;
+  margin: 0 12px;
+  transition: all 0.3s ease;
+}
+
+.slideshowImages img:hover {
+  transform: translateY(-5px);
 }
 
 @keyframes moveSlideshow {
